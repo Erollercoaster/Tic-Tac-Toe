@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic-Tac-Toe</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+</head>
+
+<body>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="bg1.mp4" type="video/mp4">
+  </video>
+  
+  <div class="main">
+    <section id="player">
+      <div class="player-container">Player X's turn</div>
+      <div id="player-selection-modal" class="modal">
+        <div class="modal-content">
+          <h2>Select Player</h2>
+          <a class="nes-btn" id="player-x-button" href="#">Player X</a>
+          <a class="nes-btn" id="player-o-button" href="#">Player O</a>
+        </div>
+      </div>
+    </section>
+    <div class ="title"><h1>Classic Tic-Tac-Toe</h1> 
+    </div>
+    <section id="move-history">
+      <div id="move-history-container" class="nes-container is-rounded is-dark">
+        <h2>Move History</h2>
+        <ul id="move-history-list"></ul>
+      </div>
+    </section>
+    
+   <section id="game">
+      <div class="nes-container is-rounded is-dark" id="board-container">
+        <div class="row" data-row="1">
+          <div id="cell1-1" class="cell" data-col="1"></div>
+          <div id="cell1-2" class="cell" data-col="2"></div>
+          <div id="cell1-3" class="cell" data-col="3"></div>
+        </div>
+        <div class="row" data-row="2">
+          <div id="cell2-1" class="cell" data-col="1"></div>
+          <div id="cell2-2" class="cell" data-col="2"></div>
+          <div id="cell2-3" class="cell" data-col="3"></div>
+        </div>
+        <div class="row" data-row="3">
+          <div id="cell3-1" class="cell" data-col="1"></div>
+          <div id="cell3-2" class="cell" data-col="2"></div>
+          <div id="cell3-3" class="cell" data-col="3"></div>
+        </div>
+
+        <div class="button-container">
+<button id="previous-button" class="nes-btn is-error" style="display: none;"> < </button>
+<button id="reset-button" class="nes-btn is-success">Reset</button>
+<button id="next-button" class="nes-btn is-error" style="display: none;"> > </button>
+
+        </div>
+      </div>
+    </section>
+
+  
+  </div>
+
+  
+  <script src="script.js"></script>
+
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
